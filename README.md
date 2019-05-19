@@ -26,6 +26,8 @@
 
 ## 基本使用
 
+![product](<https://github.com/icongL/movies-information-Projuct/blob/master/images/movies.png>)
+
 ### 应用类型
 
 - **single application page**
