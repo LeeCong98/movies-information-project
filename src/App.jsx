@@ -42,8 +42,8 @@ export default class App extends React.Component {
         	 			首页
        				</Link>
 		        </Menu.Item>
-		        <Menu.Item key="movie">
-		         	<Link to="/movie">
+		        <Menu.Item key="movies">
+		         	<Link to="/movies">
 		      			 电影	
 		        	</Link>
 		        </Menu.Item>
@@ -55,16 +55,17 @@ export default class App extends React.Component {
 		      </Menu>
 		    </Header>
 		    <Content>
-		    	<Route path="/" exact={true}  component={ DefaultComponent }></Route>
+		    	<Route path="/" 
+		    		exact={true}  
+		    		component={ DefaultComponent }
+		    	/>
 		      <Route path="/home" component={ Home } />
-		      <Route path="/movie" component={ Movie  } />
+		      <Route path="/movies" component={ Movie  } />
 		      <Route path="/about" component={ About } />
 		    </Content>
 		    <Footer style={{ textAlign: 'center' }}>that is learn React example</Footer>
 	    </Layout>
 		</HashRouter>
-	}
-	componentDidMount () {
 	}
 	componentWillUnmount (prev, props) {
 	}

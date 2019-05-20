@@ -8,8 +8,15 @@ export default class MovieListEevery extends React.Component {
 		super(props)
 		this.state = {}
 	}
+	toDetails = () => {
+		var itemId = parseInt(this.props.item.id)
+		if (itemId < 0 || isNaN(itemId)) {
+			return false
+		}
+		this.props.history.push('/movies/details/' + itemId)
+	}
 	render () {
-		return <li className={['movieBox']}>
+		return <li className={['movieBox']} onClick={ this.toDetails  } >
 			<img src={ this.props.item.images.medium } />
 			<h5 >
 				电影名称: { this.props.item.title }
@@ -22,5 +29,8 @@ export default class MovieListEevery extends React.Component {
 			</h5>
 			<Rate allowHalf defaultValue={ this.props.item.rating.average / 2  } />
 		</li>
+	}
+	componentDidMount () {
+		
 	}
 }

@@ -1,0 +1,41 @@
+.movie-details {
+	h1 {
+		font-size: 24px;
+		font-weight: 600;
+		margin-left: 20px;
+		padding: 20px 0px;
+	}
+	.detailsContent {
+		  word-spacing: -3px;
+		 div:nth-child(2) {
+		 		margin-left: 15px;
+		 		display: inline-block;
+		 		vertical-align: top;
+			 	ul {
+			 		overflow: hidden;
+			 		font-size: 14px;
+			 		list-style: none;
+					li {
+				 		float: left;
+				 		padding: 0px 8px;
+						margin-top: 10px;
+			 		}
+			 }
+			 h3, h4, h5 , h6, p {
+	 			margin-top: 15px;
+	 			font-size: 14px;
+	 			padding: 0px 8px
+			}
+
+		}
+		> p {
+		margin-top: 15px;
+		padding: 0px 20px;
+		font-size: 14px;
+			em {
+				font-style: normal;
+
+			}
+		}	
+	}
+}
